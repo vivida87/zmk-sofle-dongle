@@ -97,11 +97,11 @@
 
         layer_1 {
             bindings = <
-&kp ESCAPE  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5    &mmv MOVE_UP     &kp F6      &kp F7       &kp F8         &kp MINUS         &kp EQUAL          &trans
-&trans      &trans  &trans  &trans  &trans  &trans    &mmv MOVE_DOWN   &kp PG_UP   &kp HOME     &kp INSERT     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans
-&trans      &trans  &trans  &trans  &trans  &trans    &mmv MOVE_LEFT   &kp PG_DN   &kp END      &trans         &trans            &trans             &trans
-&trans      &trans  &trans  &trans  &trans  &trans    &mmv MOVE_RIGHT  &trans      &trans       &trans         &trans            &trans             &trans
-&kp C_MUTE  &trans  &trans  &trans  &trans  &trans    &mkp LCLK        &kp LA(F4)  &kp LA(TAB)  &kp LG(LS(S))  &trans            &trans
+&kp ESCAPE      &kp F1  &kp F2  &kp F3  &kp F4  &kp F5    &mmv MOVE_UP     &kp F6      &kp F7       &kp F8         &kp MINUS         &kp EQUAL          &trans
+&kp C_PREVIOUS  &trans  &trans  &trans  &trans  &trans    &mmv MOVE_DOWN   &kp PG_UP   &kp HOME     &kp INSERT     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans
+&kp C_NEXT      &trans  &trans  &trans  &trans  &trans    &mmv MOVE_LEFT   &kp PG_DN   &kp END      &trans         &trans            &trans             &trans
+&trans          &trans  &trans  &trans  &trans  &trans    &mmv MOVE_RIGHT  &trans      &trans       &trans         &trans            &trans             &trans
+&kp C_MUTE      &trans  &trans  &trans  &trans  &trans    &mkp LCLK        &kp LA(F4)  &kp LA(TAB)  &kp LG(LS(S))  &trans            &trans
             >;
 
             display-name = "layer1";
