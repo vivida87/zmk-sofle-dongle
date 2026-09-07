@@ -2,12 +2,11 @@
 #include <zephyr/dt-bindings/input/input-event-codes.h>
 #include <behaviors/runtime-sensor-rotate.dtsi>
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/backlight.h>
 #include <dt-bindings/zmk/bt.h>
-#include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
+#include <dt-bindings/zmk/rgb.h>
 
 / {
     zip_scroll_scaler: zip_scroll_scaler {
@@ -110,11 +109,11 @@
 
         layer_2 {
             bindings = <
-&sys_reset   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2       &bt BT_SEL 3  &bt BT_SEL 4      &mmv MOVE_UP     &sys_reset   &trans  &trans  &trans  &trans  &trans
-&bootloader  &out OUT_TOG  &trans        &trans             &bt BT_CLR    &bt BT_CLR_ALL    &mmv MOVE_DOWN   &bootloader  &trans  &trans  &trans  &trans  &trans
-&trans       &trans        &trans        &trans             &trans        &trans            &mmv MOVE_LEFT   &trans       &trans  &trans  &trans  &trans  &trans
-&trans       &bl BL_TOG    &out OUT_TOG  &ext_power EP_TOG  &trans        &trans            &mmv MOVE_RIGHT  &trans       &trans  &trans  &trans  &trans  &trans
-&trans       &trans        &trans        &trans             &trans        &trans            &mkp LCLK        &trans       &trans  &trans  &trans  &trans
+&sys_reset   &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4      &mmv MOVE_UP     &sys_reset   &trans  &trans  &trans  &trans  &trans
+&bootloader  &out OUT_TOG     &trans           &trans        &bt BT_CLR    &bt BT_CLR_ALL    &mmv MOVE_DOWN   &bootloader  &trans  &trans  &trans  &trans  &trans
+&trans       &trans           &trans           &trans        &trans        &trans            &mmv MOVE_LEFT   &trans       &trans  &trans  &trans  &trans  &trans
+&trans       &rgb_ug RGB_TOG  &rgb_ug RGB_EFF  &trans        &trans        &trans            &mmv MOVE_RIGHT  &trans       &trans  &trans  &trans  &trans  &trans
+&trans       &trans           &trans           &trans        &trans        &trans            &mkp LCLK        &trans       &trans  &trans  &trans  &trans
             >;
 
             display-name = "layer2";
