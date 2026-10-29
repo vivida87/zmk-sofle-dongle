@@ -35,7 +35,7 @@ manifest:
       revision: zmk-v0.3.0.0
     - name: prospector-zmk-module
       remote: tokyo2006
-      revision: 0.9.1
+      revision: main
     - name: zmk-dongle-display
       remote: englmaxi
       revision: v0.3
